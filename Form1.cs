@@ -1,19 +1,21 @@
-namespace Kalkulator
+namespace kalkulatorrrr
 {
     public partial class Form1 : Form
     {
-        string sign;
-        double num1;
-        double num2;
         bool startNewNumber = true;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button0_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
             NumberBt_Click("0");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NumberBt_Click("1");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -26,14 +28,9 @@ namespace Kalkulator
             NumberBt_Click("3");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            NumberBt_Click("1");
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            NumberBt_Click("6");
+            NumberBt_Click("4");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -41,19 +38,9 @@ namespace Kalkulator
             NumberBt_Click("5");
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            NumberBt_Click("4");
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            NumberBt_Click("9");
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            NumberBt_Click("8");
+            NumberBt_Click("6");
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -61,9 +48,19 @@ namespace Kalkulator
             NumberBt_Click("7");
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            NumberBt_Click("8");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            NumberBt_Click("9");
+        }
+
         private void NumberBt_Click(string number)
         {
-            if (startNewNumber == false)
+            if(startNewNumber == false)
             {
                 textBox1.Text += number;
             }
@@ -71,6 +68,7 @@ namespace Kalkulator
             {
                 textBox1.Text = number;
                 startNewNumber = false;
+
             }
         }
     }
